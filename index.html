@@ -181,6 +181,24 @@ section{padding:54px 0 10px}
 .contact p{color:rgba(255,255,255,.85);max-width:520px;margin:0 auto 24px;font-size:14.5px}
 footer{text-align:center;padding:34px 0 28px;font-size:12.5px;color:var(--muted)}
 
+
+/* PROJECTS */
+.proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pcard{display:block;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px 22px;transition:.25s;color:var(--ink)}
+.pcard:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(22,32,74,.12);border-color:var(--accent)}
+.prow{display:flex;gap:8px;align-items:center;margin-bottom:10px;flex-wrap:wrap}
+.ka{background:var(--accent);color:#fff;font-size:10.5px;font-weight:800;border-radius:6px;padding:3px 8px;letter-spacing:.6px}
+.pstat{font-size:10.5px;font-weight:700;border-radius:999px;padding:3px 10px;background:#e6f7f1;color:#087f5b}
+.pstat.done{background:#eef1f6;color:#5d6678}
+.gp{font-size:10.5px;font-weight:800;background:#fff3bf;color:#9a6700;border-radius:999px;padding:3px 10px}
+.pyear{margin-left:auto;font-size:11.5px;font-weight:700;color:var(--muted)}
+.pcard h3{font-size:15px;line-height:1.35;margin-bottom:8px}
+.pmeta{font-size:12.5px;font-weight:650;color:#39415a;margin-bottom:6px}
+.pcard p{font-size:12.3px;color:var(--muted)}
+.plink{margin-top:10px;font-size:12px;font-weight:700;color:var(--accent)}
+@media(max-width:740px){.proj-grid{grid-template-columns:1fr}}
+
 /* REVEAL */
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
 .reveal.in{opacity:1;transform:none}
@@ -220,6 +238,7 @@ footer{text-align:center;padding:34px 0 28px;font-size:12.5px;color:var(--muted)
       <div class="nav-links" id="nav-links">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#ai">AI</a>
         <a href="#education">Education</a>
@@ -402,6 +421,72 @@ footer{text-align:center;padding:34px 0 28px;font-size:12.5px;color:var(--muted)
         </div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-title reveal">Projects</div>
+    <div class="sec-sub reveal">Erasmus+ portfolio — <span style="color:var(--accent)">€370K+</span> in funded projects</div>
+    <div class="hint reveal">Role: project proposal author &amp; coordinator · Institute for Research and Reforms — verifiable on the European Commission&rsquo;s project results platform.</div>
+    <div class="proj-grid">
+      <a class="pcard reveal" href="https://erasmus-plus.ec.europa.eu/projects/search/details/2025-3-DE04-KA152-YOU-000387691" target="_blank" rel="noopener">
+        <div class="prow"><span class="ka">KA152</span><span class="pstat">Ongoing</span><span class="pyear">2026</span></div>
+        <h3>COMET: Cybersecurity Optimization and Modern Evolutionary Technologies</h3>
+        <div class="pmeta">&#128181; €33,465 &nbsp;·&nbsp; &#127757; 6 countries</div>
+        <p>AI &amp; data usage · digital skills · digital safety</p>
+        <div class="plink">View on EC portal &rarr;</div>
+      </a>
+      <a class="pcard reveal" href="https://erasmus-plus.ec.europa.eu/projects/search/details/2025-1-DE04-KA152-YOU-000300347" target="_blank" rel="noopener">
+        <div class="prow"><span class="ka">KA152</span><span class="pstat">Ongoing</span><span class="pyear">2025–2026</span></div>
+        <h3>Migrapreneurs: Building Inclusive Enterprises</h3>
+        <div class="pmeta">&#128181; €66,904 &nbsp;·&nbsp; &#127757; 6 countries</div>
+        <p>entrepreneurship · migrant integration · youth employability</p>
+        <div class="plink">View on EC portal &rarr;</div>
+      </a>
+      <a class="pcard reveal" href="https://erasmus-plus.ec.europa.eu/projects/search/details/2025-1-DE04-KA152-YOU-000304564" target="_blank" rel="noopener">
+        <div class="prow"><span class="ka">KA152</span><span class="pstat done">Completed</span><span class="pyear">2025–2026</span></div>
+        <h3>NEET Women NEED You</h3>
+        <div class="pmeta">&#128181; €48,734 &nbsp;·&nbsp; &#127757; 8 countries</div>
+        <p>gender equality · employability · labour-market access</p>
+        <div class="plink">View on EC portal &rarr;</div>
+      </a>
+      <a class="pcard reveal" href="https://erasmus-plus.ec.europa.eu/projects/search/details/2025-1-DE04-KA152-YOU-000305107" target="_blank" rel="noopener">
+        <div class="prow"><span class="ka">KA152</span><span class="pstat done">Completed</span><span class="pyear">2025–2026</span></div>
+        <h3>PEACE: Promoting Equality and Cooperation in Europe</h3>
+        <div class="pmeta">&#128181; €47,352 &nbsp;·&nbsp; &#127757; 6 countries</div>
+        <p>European values · intercultural dialogue · human rights</p>
+        <div class="plink">View on EC portal &rarr;</div>
+      </a>
+      <a class="pcard reveal" href="https://erasmus-plus.ec.europa.eu/projects/search/details/2024-3-DE04-KA152-YOU-000283668" target="_blank" rel="noopener">
+        <div class="prow"><span class="ka">KA152</span><span class="pstat done">Completed</span><span class="gp">&#11088; Good Practice</span><span class="pyear">2025</span></div>
+        <h3>AI and Youth: Preparing for the Future</h3>
+        <div class="pmeta">&#128181; €54,778 &nbsp;·&nbsp; &#127757; 7 countries</div>
+        <p>AI &amp; data usage · digital skills · key competences</p>
+        <div class="plink">View on EC portal &rarr;</div>
+      </a>
+      <a class="pcard reveal" href="https://erasmus-plus.ec.europa.eu/projects/search/details/2024-3-BG01-KA152-YOU-000272117" target="_blank" rel="noopener">
+        <div class="prow"><span class="ka">KA152</span><span class="pstat done">Completed</span><span class="pyear">2025</span></div>
+        <h3>E.A.R.T.H: Eco-Action, Resilience, and Transformative Habits</h3>
+        <div class="pmeta">&#128181; €46,190 &nbsp;·&nbsp; &#127757; 5 countries</div>
+        <p>environment &amp; climate · entrepreneurship · digital skills</p>
+        <div class="plink">View on EC portal &rarr;</div>
+      </a>
+      <a class="pcard reveal" href="https://erasmus-plus.ec.europa.eu/projects/search/details/2023-3-BG01-KA152-YOU-000183348" target="_blank" rel="noopener">
+        <div class="prow"><span class="ka">KA152</span><span class="pstat done">Completed</span><span class="pyear">2024</span></div>
+        <h3>Навици за по-добро бъдеще (Habits for a Better Future)</h3>
+        <div class="pmeta">&#128181; €37,033 &nbsp;·&nbsp; &#127757; 5 countries</div>
+        <p>environment &amp; climate · green skills · EU values</p>
+        <div class="plink">View on EC portal &rarr;</div>
+      </a>
+      <a class="pcard reveal" href="https://erasmus-plus.ec.europa.eu/projects/search/details/2023-1-BG01-KA154-YOU-000144713" target="_blank" rel="noopener">
+        <div class="prow"><span class="ka">KA154</span><span class="pstat done">Completed</span><span class="pyear">2023–2024</span></div>
+        <h3>Заедно за планетата (Together for the Planet)</h3>
+        <div class="pmeta">&#128181; €35,500 &nbsp;·&nbsp; &#127757; national</div>
+        <p>democratic participation · EU awareness · climate action</p>
+        <div class="plink">View on EC portal &rarr;</div>
+      </a>
     </div>
   </div>
 </section>
